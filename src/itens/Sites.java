@@ -5,8 +5,8 @@ public class Sites {
     private String SiteLinks;
 
     public Sites(String siteNames, String siteLinks) {
-        SiteNames = siteNames;
-        SiteLinks = siteLinks;
+        this.SiteNames = siteNames;
+        this.SiteLinks = siteLinks;
     }
 
     public String getSiteNames() {

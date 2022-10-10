@@ -1,19 +1,19 @@
 package itens;
 
 public class Node {
-    private Sites node;
+    private Sites no;
     private Node next;
 
-    public Node(Sites s) {
-        this.node = s;
-    }
-
+public Node(Sites no){
+    this.no = no;
+    this.next = null;
+}
     public Sites getNode() {
-        return node;
+        return no;
     }
 
-    public void setNode(Sites s) {
-        this.node = s;
+    public void setNode(Sites element) {
+        this.no = element;
     }
 
     public Node getNext() {
