@@ -35,7 +35,7 @@ public class LinkedList {
         this.tamanho = tamanho;
     }
 
-    public void add(Sites element ) {
+    public void add(Sites element) {
         Node no = new Node(element);
         if (this.head == null && this.tail == null) {
             this.head = no;
@@ -47,16 +47,26 @@ public class LinkedList {
         this.tamanho++;
     }
 
-    public void add() {
-    }
-}
- /*   public String findLinks(Sites nome){
-        Node no = new Node(nome);
-        while (no!=null){
-            if ()
+
+
+    public String findLinks(String nome) {
+        Node p = this.head;
+        String n = "valor nao encontrado";
+        while (p != null) {
+            if (p.getNode().getSiteNames().equals(nome)){
+                n = p.getNode().getSiteLinks();
+                break;
+            }
+           p = p.getNext();
+        }
+        if (this.head.equals(nome)){
+            this.head = this.head.getNext();
+
+
         }
 
+        return n;
     }
-*/
 
+}
 

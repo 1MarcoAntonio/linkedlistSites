@@ -5,11 +5,12 @@ import itens.Sites;
 public class Main {
     public static void main(String[] args) {
     LinkedList lista = new LinkedList();
-    Sites s = new Sites("mozila","www.mozila.com");
-    Sites n = new Sites("dasdas","dasdasd");
-    s.setSiteNames("ronaldo");
+    Sites s = new Sites("mozila","https://www.mozila.com");
+    Sites n = new Sites("google","https://www.google.com");
     lista.add(s);
     lista.add(n);
-        System.out.println(lista.getTail().getNode().getSiteNames());
+
+        System.out.println(lista.findLinks("google"));
+
     }
 }
